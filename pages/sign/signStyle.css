@@ -1,0 +1,118 @@
+:root {
+    /* color */
+    --green: #006633;
+    --light-green: #639202;
+    --black: #3f4141;
+    --light-black: #2c2a29;
+    --cream: #f6f5ef;
+    --gray: #7d7d7d;
+    --light-gray: #f4f4f2;
+    --green-blue:#47967c;
+    --starbucks:#00704a;
+    --brown:#b9813e;
+    --first-color: #2d2926;
+    --bg-color: #111;
+    --white-color: #fff;
+
+    /* Fuente y tipografia */
+    --normal-font-size: 14px;
+    --small-font-size: 10px;
+
+    /* z index */
+    --z-fixed: 100;
+}
+main{
+    background: url(/img/login_bg.jpg);
+    height: 100%;
+    padding: 10% 15%;
+}
+main>div>h1{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+.login_box{
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+}
+.login_box div:first-child{
+    line-height: 1.5;
+    font-size: 16px;
+    padding: 15px 0;
+    text-align: center;
+    color: var(--black);
+    border-bottom: var(--gray) solid 1px;
+}
+.login_box div:first-child span{
+    color: var(--starbucks);
+}
+.login_box div:last-child{
+    padding: 20px 5%;
+}
+.login_box div:last-child input{
+    width: 100%;
+    margin-bottom: 8px;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.save_box{
+    line-height: 50px;
+    
+}
+.save_box button{
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    color: var(--gray);
+}
+.save_box button.on{
+    color: var(--starbucks);
+}
+.login_Btn{
+    width: 100%;
+    background-color: var(--starbucks);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    margin: 5px 0;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.login_terms{
+    color: var(--starbucks);
+    line-height: 1.3;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.user_Btns{
+    display: flex;
+    justify-content: center;
+    color: var(--gray);
+    font-weight: bold;
+}
+.user_Btns li{
+    width: 33.3%;
+    text-align: center;
+}
+.user_Btns li:not(:last-child){
+    border-right: 1px solid var(--gray);
+}
+@media screen and (max-width:767px) {
+    .login_box{
+        width: 90%;
+    }
+}
+@media screen and (max-width:640px) {
+    main{
+        padding: 10% 5%;
+    }
+}

@@ -1,0 +1,429 @@
+#coffee_main{
+    width: 100%;
+}
+.page_name{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 11%;
+}
+.page_name p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.page_name div{
+    display: flex;
+    align-items: center;
+}
+.coffee_banner{
+    width: 100%;
+    height: 100%;
+}
+.slide-container{
+    position: relative;
+    margin: auto;
+}
+.slide-box{
+    display: none;
+}
+.pc_img{
+    position: relative;
+    width: 120%;
+    left: -5%;
+}
+.m_img{
+    display: none;
+}
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+.slide-dots{
+    width: 40px;
+    position: relative;
+    top: -30px;
+    left: calc(50% - 20px);
+    height: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.current, .dot:hover {
+    border: 3px solid #00704a;
+    background-color: transparent;
+}
+
+/* coffee-notice */
+.coffee_notice{
+    height: 60px;
+    display: flex;
+    background-color: #f6f5ef;
+}
+  
+.coffee_notice_bgl {
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.coffee_notice_inner {
+    width: 22%;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right:17px;
+}
+.plus_btn{
+    margin-right: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.coffee_notice_bgr {
+    width: 50%;
+    height: 60px;
+    background: url(/img/coffee/useInfo_bg.jpg) center;
+    color: white;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.coffee_term_img{
+    width: 70px;
+    height: 100%;
+    background: url(/img/coffee/useInfo_app.png) no-repeat;
+    z-index: 100;
+    position: relative;
+    top: 10px;
+    left: 0;
+}
+.coffee_term_txt{
+    width: 180px;
+    height: 60px;
+    background: url(/img/coffee/useInfo_txt.png) no-repeat;
+    background-size: 100%;
+    z-index: 150;
+    position: absolute;
+    top: 14px;
+    left: 110px;
+}
+
+/* notice 롤링 */
+.text_rolling {
+    width: 210px;
+    height: 60px;
+}
+.text_rolling {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.text_rolling {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    line-height: 50px;
+    background-color: black;
+}
+.text_rolling ul li p {
+    font-size: 13px;
+    line-height: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* 430px height */
+.coffee_section{
+    width: 100%;
+    height: 345px;
+    position: relative;
+}
+.left_section>div{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+}
+.right_section>div{
+    width: 35%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    right: 55%;
+}
+#tasting{
+    background: url(/img/coffee/coffee_choice_wrap_bg.jpg) left center no-repeat;
+    background-size: 160%;
+    background-position-x: 20%;
+}
+#tasting>div>div{
+    width: 100%;
+    height: 100%;
+    background: url(/img/coffee/coffee_choice_txt.png) no-repeat;
+    background-size: 100%;
+}
+#reserve{
+    background: url(/img/coffee/coffee_reserve_wrap_bg.jpg) left center no-repeat;
+    background-size: 160%;
+    background-position-x: 20%;
+}
+#reserve>div>div{
+    width: 100%;
+    height: 100%;
+    background: url(/img/coffee/coffee_reserve_txt.png) no-repeat;
+    background-size: 100%;
+}
+#espresso{
+    background: url(/img/coffee/coffee_espresso_wrap_bg.jpg) left center no-repeat;
+    background-size: 160%;
+    background-position-x: 20%;
+}
+#espresso>div>div{
+    width: 100%;
+    height: 100%;
+    background: url(/img/coffee/coffee_espresso_txt.png) no-repeat;
+    background-size: 100%;
+}
+#best{
+    background: url(/img/coffee/coffee_best_wrap_bg.jpg) left center no-repeat;
+    background-size: 160%;
+    background-position-x: 20%;
+}
+#best>div>div{
+    width: 100%;
+    height: 100%;
+    background: url(/img/coffee/coffee_best_txt.png) no-repeat;
+    background-size: 100%;
+}
+#story{
+    background: url(/img/coffee/coffee_hs_wrap_bg.jpg) left center no-repeat;
+    background-size: 160%;
+    background-position-x: 20%;
+}
+#story>div>div{
+    width: 100%;
+    height: 100%;
+    background: url(/img/coffee/coffee_hs_txt.png) no-repeat;
+    background-size: 100%;
+}
+.coffee_btn {
+    position: relative;
+    width: 120px;
+    border-radius: 5px;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.left_section .coffee_btn:hover {
+    text-decoration: underline;
+    color: var(--light-black);
+    background-color: white;
+}
+.right_section .coffee_btn:hover {
+    text-decoration: underline;
+    background-color: var(--light-black);
+    color: white;
+}
+.left_section .coffee_btn{
+    border: 2px solid white;
+    color: white;
+    background-color: transparent;
+    top: 55%;
+}
+.right_section .coffee_btn{
+    border: 2px solid var(--light-black);
+    color: var(--light-black);
+    background-color: transparent;
+    top: 50%;
+    left: 0;
+}
+#best .coffee_btn{
+    top: 60%;
+}
+
+
+@media screen and (max-width:1023px) {
+    .coffee_notice_bgr{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .coffee_notice_bgl{
+        padding-left: 14px;
+    }
+    .coffee_notice_inner {
+        width: 26%;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right:10px;
+    }
+    .text_rolling ul li p {
+        font-size: 12px;
+        line-height: 60px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .coffee_section{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .pc_img{
+        display: none;
+    }    
+    .m_img{
+        display: block;
+        width: 100%;
+    }
+    .coffee_notice{
+        flex-direction: column;
+        height: 100%;
+    }
+    .coffee_notice_bgl .coffee_notice_inner{
+        display: none;
+    }
+    .coffee_notice_bgl{
+        width: 100%;
+        padding: 0 5%;
+    }
+    .text_rolling{
+        padding-left: 20px;
+        width: 90%;
+        min-width: 415px;
+    }
+    .coffee_notice_bgr{
+        width: 100%;
+        padding: 10px 5%;
+    }
+    .coffee_section{
+        width: 100%;
+        height: 1000px;
+    }
+    .coffee_section>div{
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .left_section .coffee_btn{
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #reserve .coffee_btn{
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #best .coffee_btn{
+        top: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #tasting{
+        background: url(/img/coffee/m_coffee_bimg1.jpg) bottom center no-repeat;
+        background-size: 100%;
+    }
+    #tasting>div>div{
+        width: 100%;
+        height: 100%;
+        background: url(/img/coffee/m_coffee_btxt1.png) no-repeat;
+        background-size: 100%;
+    }
+    #reserve{
+        background: url(/img/coffee/m_coffee_bimg2.jpg) bottom center no-repeat;
+        background-size: 100%;
+    }
+    #reserve>div>div{
+        width: 100%;
+        height: 100%;
+        background: url(/img/coffee/m_coffee_btxt2.png) no-repeat;
+        background-size: 100%;
+    }
+    #espresso{
+        background: url(/img/coffee/m_coffee_bimg3.jpg) bottom center no-repeat;
+        background-size: 100%;
+    }
+    #espresso>div>div{
+        width: 100%;
+        height: 100%;
+        background: url(/img/coffee/m_coffee_btxt3.png) no-repeat;
+        background-size: 100%;
+    }
+    #best{
+        background: url(/img/coffee/m_coffee_bimg4.jpg) bottom center no-repeat;
+        background-size: 100%;
+    }
+    #best>div>div{
+        width: 100%;
+        height: 100%;
+        background: url(/img/coffee/m_coffee_btxt4.png) no-repeat;
+        background-size: 100%;
+    }
+    #story{
+        background: url(/img/coffee/m_coffee_bimg5.jpg) bottom center no-repeat;
+        background-size: 100%;
+    }
+    #story>div>div{
+        width: 100%;
+        height: 100%;
+        background: url(/img/coffee/m_coffee_btxt5.png) no-repeat;
+        background-size: 100%;
+    }
+}
+
+/* 500px미만은X */
+@media screen and (max-width:640px) {
+    .coffee_section{
+        width: 100%;
+        height: 775px;
+    }
+    .coffee_section>div{
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

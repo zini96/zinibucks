@@ -1,0 +1,62 @@
+{
+    "블론드":[
+        {
+            "id":1,
+            "title":"스타벅스 돌체구스토 베란다 블렌드 12개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003565]_20210903133454682.jpg",
+            "division":"capsule"
+        }
+    ],
+    "미디엄":[
+        {
+            "id":1,
+            "title":"스타벅스 네스프레스 파이크플레이스 10개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003563]_20210903130432193.jpg",
+            "division":"capsule"
+        },
+        {
+            "id":2,
+            "title":"스타벅스 네스프레소 콜롬비아 10개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003561]_20210903125819322.jpg",
+            "division":"capsule"
+        },
+        {
+            "id":3,
+            "title":"스타벅스 네스프레소 하우스 블렌드 10개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003560]_20210903130212161.jpg",
+            "division":"capsule"
+        },
+        {
+            "id":4,
+            "title":"스타벅스 돌체구스토 하우스 블렌드 12개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003564]_20210903133257276.jpg",
+            "division":"capsule"
+        }
+    ],
+    "다크":[
+        {
+            "id":1,
+            "title":"스타벅스 돌체구스토 에스프레소 12개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003566]_20210903133616233.jpg",
+            "division":"capsule"
+        },
+        {
+            "id":2,
+            "title":"스타벅스 네스프레소 에스프레소 10개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003562]_20210903130009832.jpg",
+            "division":"capsule"
+        }
+    ],
+    "플레이버":[
+    ],
+    "리저브":[
+    ],
+    "플레이버라떼":[
+        {
+            "id":1,
+            "title":"스타벅스 돌체구스토 캐러멜 마키아또 12개입",
+            "img":"https://image.istarbucks.co.kr/upload/store/skuimg/2021/09/[9300000003567]_20210903133730038.jpg",
+            "division":"capsule"
+        }
+    ]
+}

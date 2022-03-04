@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cls_li { }
+    </style>
+    <script>
+        if(typeof(document.getElementsByClassName) !== "function") {
+            document.getElementsByClassName = function(className) {
+                var arr = [];
+                var ele = document.getElementsByTagName("*");
+                var cnt = ele.length;
+                for(var i=0;i<cnt;i++) {
+                    if((" "+ele[i].className+" ").indexOf(" "+className+" ") > -1) {
+                        arr.push(ele[i]);
+                    }
+                }
+                return arr;
+            };
+        }
+    
+        var idx=0;
+        function view(){
+            var arr = document.getElementsByClassName('cls_li');
+            for(var i=0; i < arr.length; i++){
+                arr[i].style.display='none';
+            }
+            if(idx >= arr.length){
+                idx=0;
+            }
+            arr[idx].style.display='block';
+            idx++;
+        }
+        window.onload=function(){
+            setInterval(view,2000);
+        }
+    </script>
+</head>
+    <body>
+        <ul >
+            <li class="cls_li" style="display:block;" > aaaaaaaa</li>
+            <li class="cls_li" > bbbbbbbb</li>
+            <li class="cls_li" > cccccccc</li>
+        </ul>
+    </body>
+</html>

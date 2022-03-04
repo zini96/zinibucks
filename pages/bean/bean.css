@@ -1,0 +1,351 @@
+#bean_main{
+    width: 100%;
+}
+.page_name{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 11%;
+}
+.page_name p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.page_name div{
+    display: flex;
+    align-items: center;
+}
+
+/* Content 부분 */
+.content {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.content .bean_kind {
+  padding: 30px 30px 0px;
+  border: 1px solid #ddd;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+.bean_kind{
+  width: 100%;
+}
+button{
+    outline: none;
+    border: none;
+}
+fieldset{
+    border: none;
+}
+
+/* 분류보기 부분*/
+.titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.bean_kind .title {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.bean_kind .bean_kind_btn {
+  position: absolute;
+  right: 30px;
+  top: 17px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  color: #0e0e0e;
+  background-color: #f4f4f0;
+}
+.bean_kind_btn span {
+  font-size: 32px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  vertical-align: top;
+}
+
+.bean_kind #bean_kind_check {
+  border-top: 1px solid #ddd;
+  padding: 30px 0;
+  position: relative;
+}
+#bean_kind_check.active {
+  display: none;
+}
+.bean_kind_tabs .dt1 {
+  left: 0;
+  position: absolute;
+  top: 30px;
+}
+
+.dt1 button {
+  display: block;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background: #f4f4f1;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+.dt1 button:hover {
+  text-decoration: underline;
+}
+.dt1 .selected {
+  background: #006633;
+  color: #fff;
+}
+.dt1 .selected:hover {
+  text-decoration: underline;
+}
+
+.bean_kind_tabs dd {
+  margin-top: 55px;
+}
+
+.hid {
+  position: absolute;
+  left: -9999px;
+  font-size: 0;
+  width: 0;
+  height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+.product_select_wrap ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+#mCSB_1_container li {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  float: left;
+  margin-right: 30px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.bean_kind_tabs .dt2{
+  left: 210px;
+  position: absolute;
+  top: 30px;
+}
+.bean_kind_tabs .dt3 {
+  left: 420px;
+  position: absolute;
+  top: 30px;
+}
+.dt2 button, .dt3 button {
+  display: block;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 3px;
+  background: #f4f4f1;
+  color: #222;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+}
+.dt2 button:hover, .dt3 button:hover {
+  text-decoration: underline;
+}
+.dt2 .selected, .dt3 .selected {
+  background: #006633;
+  color: #fff;
+}
+.dt2 .selected:hover, .dt3 .selected:hover {
+  text-decoration: underline;
+}
+.dt2_content, .dt3_content {
+  display: none;
+}
+.service_bn {
+  width: 100%;
+  position: relative;
+  left: -8px;
+  top: -5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.service_bn li {
+  margin: 5px 8px;
+  width: 30%;
+}
+.service_bn li img {
+  width: 100%;
+  border: 2px solid #fff;
+  vertical-align: top;
+}
+.content .themeList {
+  display: none;
+}
+
+/* itemList */
+.beanList, .viaList, .capsuleList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.beanList .bean_title, .viaList .via_title, .capsuleList .capsule_title {
+  position: absolute;
+  left: 10%;
+  padding: 20px;
+  background: #f4f4f2;
+  margin-bottom: 20px;
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  width: 80%;
+  color: #222;
+}
+.list{
+  padding-top: 60px;
+}
+.list, .vialist, .capsulelist {
+  display: block;
+}
+.item_list{
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: space-around;
+  align-items: center;
+}
+.item{
+  margin: 0 10px 10px 10px;
+}
+.item_container {
+  text-align: center;
+  width: 200px;
+}
+.item_container .item_content {
+  height: 200px;
+  overflow: hidden;
+}
+.item_thumbnail {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.item_thumbnail:hover {
+  transform: scale(1.1);
+}
+
+.item_description {
+  font-size: 12px;
+  color: #444;
+  height: 54px;
+  line-height: 54px;
+}
+
+
+@media screen and (max-width:1023px) {
+  .item_container {
+    width: 230px;
+  }
+  .item_container .item_content {
+    height: 230px;
+  }
+  .bean_kind_tabs .dt2{
+    left: 165px;
+  }
+  .bean_kind_tabs .dt3{
+    left: 330px;
+  }
+  .dt1 button, .dt2 button, .dt3 button{
+    width: 155px;
+    font-size: 12px;
+  }
+  .item_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .service_bn li {
+    width: 100%;
+  }
+  .dt2_content, .dt3_content{
+    background-color: white;
+    height: 100px;
+    overflow-y: scroll;
+  }
+  .dt2_content::-webkit-scrollbar, .dt3_content::-webkit-scrollbar {
+    width: 10px;
+  }
+  .dt2_content::-webkit-scrollbar-thumb, .dt3_content::-webkit-scrollbar-thumb{
+    background-color: var(--light-black);
+    border-radius: 5px;
+  }
+  .dt2_content::-webkit-scrollbar-track, .dt3_content::-webkit-scrollbar-track{
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .bean_kind_tabs .dt2{
+    left: 140px;
+  }
+  .bean_kind_tabs .dt3{
+    left: 280px;
+  }
+  .dt1 button, .dt2 button, .dt3 button{
+    width: 130px;
+    font-size: 12px;
+  }
+  .product_select_wrap{
+    max-height: 70px;
+    overflow-y: scroll;
+  }
+  .product_select_wrap::-webkit-scrollbar {
+    width: 10px;
+  }
+  .product_select_wrap::-webkit-scrollbar-thumb{
+    background-color: var(--light-black);
+    border-radius: 5px;
+  }
+  .product_select_wrap::-webkit-scrollbar-track{
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+  .item_list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .service_bn li {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* 500px미만은X */
+@media screen and (max-width:640px) {
+  .bean_kind_tabs .dt2{
+    left: 115px;
+  }
+  .bean_kind_tabs .dt3{
+    left: 230px;
+  }
+  .dt1 button, .dt2 button, .dt3 button{
+    width: 110px;
+    font-size: 10px;
+  }
+}
